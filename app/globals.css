@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Warm paper-ish design tokens */
+:root {
+  --paper: #f6f1e7;
+  --paper-deep: #ebe3d5;
+  --cream-polaroid: #faf6ef;
+  --ink: #2c2824;
+  --ink-muted: #6b645c;
+  --accent: #8b6914;
+  --shadow-book: 0 12px 28px rgba(44, 40, 36, 0.18), 0 4px 8px rgba(44, 40, 36, 0.08);
+  --radius-polaroid: 3px;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-cream-polaroid: var(--cream-polaroid);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+}
+
+body {
+  background-color: var(--paper-deep);
+  color: var(--ink);
+}
