@@ -1,16 +1,6 @@
 {
-  "background": "forest",
+  "background": "tulips",
   "books": [
-    {
-      "id": "ol_OL8584931W",
-      "title": "The Wind-Up Bird Chronicle",
-      "author": "Haruki Murakami",
-      "coverUrl": "https://covers.openlibrary.org/b/id/630454-M.jpg",
-      "monthRead": "2024-03",
-      "rating": 5,
-      "thought": "the saddest book i'll ever recommend without hesitation",
-      "position": { "x": 0, "y": 0, "rotation": -2 }
-    },
     {
       "id": "ol_OL20150260W",
       "title": "Normal People",
@@ -19,7 +9,13 @@
       "monthRead": "2023-11",
       "rating": 4,
       "thought": "quiet and bruising in the best way",
-      "position": { "x": 220, "y": -40, "rotation": 1.5 }
+      "summary": "Connell and Marianne weave in and out of each other's lives from school in a small Irish town to Dublin, carrying class, shame, and tenderness between them.",
+      "layerRank": 32,
+      "position": {
+        "x": -1131.0161616325133,
+        "y": 307.9284661500135,
+        "rotation": 1.5
+      }
     },
     {
       "id": "ol_OL18012166W",
@@ -29,7 +25,448 @@
       "monthRead": "2022-08",
       "rating": 5,
       "thought": "myth retold with teeth and sunlight",
-      "position": { "x": -200, "y": 80, "rotation": 2 }
+      "summary": "Exiled to a lonely island, the goddess Circe sharpens her craft and crosses paths with Odysseus, monsters, and mortals in this intimate Greek myth retelling.",
+      "layerRank": 33,
+      "position": {
+        "x": -954.5997807709152,
+        "y": 392.83122178515674,
+        "rotation": 2
+      }
+    },
+    {
+      "id": "ol_OL21802553W",
+      "title": "Shatter Me Complete Collection",
+      "author": "Tahereh Mafi",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14428312-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 37,
+      "position": {
+        "x": -802.9385519423246,
+        "y": 198.51357883550597,
+        "rotation": -1
+      }
+    },
+    {
+      "id": "ol_OL37942515W",
+      "title": "Blood over Bright Haven",
+      "author": "M. L. Wang",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14852858-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 93,
+      "position": {
+        "x": -1342.5607721360698,
+        "y": 407.940397031565,
+        "rotation": -2.9
+      }
+    },
+    {
+      "id": "ol_OL37563803W",
+      "title": "That's Not My Name",
+      "author": "Megan Lally",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15155355-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 95,
+      "position": {
+        "x": -312.793748460854,
+        "y": -800.8040064646625,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "ol_OL42397791W",
+      "title": "No Place Left to Hide",
+      "author": "Megan Lally",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14846773-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 36,
+      "position": {
+        "x": -942.7776348032421,
+        "y": -93.82043374949981,
+        "rotation": 3
+      }
+    },
+    {
+      "id": "ol_OL21745884W",
+      "title": "Project Hail Mary",
+      "author": "Andy Weir",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11200092-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 88,
+      "position": {
+        "x": -745.4018354972468,
+        "y": -97.40345726600926,
+        "rotation": -2.4
+      }
+    },
+    {
+      "id": "ol_OL27838518W",
+      "title": "From Blood and Ash",
+      "author": "Jennifer L. Armentrout",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14105538-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 42,
+      "position": {
+        "x": -625.0114089928873,
+        "y": 159.18695851619253,
+        "rotation": -0.9
+      }
+    },
+    {
+      "id": "ol_OL19963111W",
+      "title": "Unravel me",
+      "author": "Tahereh Mafi",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12727567-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 44,
+      "position": {
+        "x": -565.1124229154054,
+        "y": -114.86532659276634,
+        "rotation": 2.7
+      }
+    },
+    {
+      "id": "ol_OL17358795W",
+      "title": "Dark Matter",
+      "author": "Blake Crouch",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7436634-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 94,
+      "position": {
+        "x": -155.0357525263263,
+        "y": -901.3757345622078,
+        "rotation": -0.6
+      }
+    },
+    {
+      "id": "ol_OL27893158W",
+      "title": "Divine Rivals",
+      "author": "Rebecca Ross",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13268161-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 48,
+      "position": {
+        "x": -429.2827467652843,
+        "y": 125.17515464210051,
+        "rotation": 0.5
+      }
+    },
+    {
+      "id": "ol_OL17715454W",
+      "title": "Caraval",
+      "author": "Stephanie Garber",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7990753-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 50,
+      "position": {
+        "x": -1332.8891707967614,
+        "y": 141.10754719657993,
+        "rotation": -2.4
+      }
+    },
+    {
+      "id": "ol_OL20073906W",
+      "title": "Recursion",
+      "author": "Blake Crouch",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8748478-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 52,
+      "position": {
+        "x": -394.0413726732746,
+        "y": -145.55729087848061,
+        "rotation": -1.9
+      }
+    },
+    {
+      "id": "ol_OL25340338W",
+      "title": "Wrong Place Wrong Time",
+      "author": "Gillian McAllister",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12911290-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 54,
+      "position": {
+        "x": -227.87914507036908,
+        "y": 3.9064273418583753,
+        "rotation": 2
+      }
+    },
+    {
+      "id": "ol_OL36888611W",
+      "title": "Out on a Limb",
+      "author": "Hannah Bonam-Young",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15102080-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 56,
+      "position": {
+        "x": -575.5212077217008,
+        "y": 406.4015090609867,
+        "rotation": -1.5
+      }
+    },
+    {
+      "id": "ol_OL17076473W",
+      "title": "Red Rising",
+      "author": "Pierce Brown",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7316188-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 58,
+      "position": {
+        "x": -1315.495481329449,
+        "y": -146.9523801641949,
+        "rotation": -1.2
+      }
+    },
+    {
+      "id": "ol_OL24236112W",
+      "title": "As Good As Dead",
+      "author": "Holly Jackson",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10716589-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 60,
+      "position": {
+        "x": -375.5836320558412,
+        "y": 374.25770609488507,
+        "rotation": 1.4
+      }
+    },
+    {
+      "id": "ol_OL27729743W",
+      "title": "The Housemaid",
+      "author": "Freida McFadden",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15105883-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 63,
+      "position": {
+        "x": -214.42953853283876,
+        "y": -250.7753977186743,
+        "rotation": 2.7
+      }
+    },
+    {
+      "id": "ol_OL17356524W",
+      "title": "One True Loves",
+      "author": "Taylor Jenkins Reid",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7434531-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 65,
+      "position": {
+        "x": -216.85557515511482,
+        "y": 257.12222637333537,
+        "rotation": -2.6
+      }
+    },
+    {
+      "id": "ol_OL20646061W",
+      "title": "A Good Girl's Guide to Murder",
+      "author": "Holly Jackson",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13156188-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 91,
+      "position": {
+        "x": -1726.995453236174,
+        "y": 170.29026520051744,
+        "rotation": 2.1
+      }
+    },
+    {
+      "id": "ol_OL20789113W",
+      "title": "The Heart of Betrayal",
+      "author": "Mary E. Pearson",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10081479-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 69,
+      "position": {
+        "x": -11.693893768192197,
+        "y": 12.218022315653258,
+        "rotation": -0.6
+      }
+    },
+    {
+      "id": "ol_OL19748577W",
+      "title": "Legendary",
+      "author": "Stephanie Garber",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9242465-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 71,
+      "position": {
+        "x": -823.1680609738844,
+        "y": -340.72909928848645,
+        "rotation": -1
+      }
+    },
+    {
+      "id": "ol_OL17332479W",
+      "title": "Six of Crows",
+      "author": "Leigh Bardugo",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12667417-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 96,
+      "position": {
+        "x": -121.66566231066751,
+        "y": -665.8750404269082,
+        "rotation": 2.5
+      }
+    },
+    {
+      "id": "ol_OL17597665W",
+      "title": "Crooked Kingdom",
+      "author": "Leigh Bardugo",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12667428-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 75,
+      "position": {
+        "x": -1538.9466832248545,
+        "y": 231.87257438551097,
+        "rotation": 2.2
+      }
+    },
+    {
+      "id": "ol_OL22011552W",
+      "title": "The Prison Healer",
+      "author": "Lynette Noni",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10864672-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 92,
+      "position": {
+        "x": -1231.0827786023594,
+        "y": -614.6591259632714,
+        "rotation": -2
+      }
+    },
+    {
+      "id": "ol_OL16607146W",
+      "title": "Throne of Glass",
+      "author": "Sarah J. Maas",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13312488-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 89,
+      "position": {
+        "x": -2023.4644833986242,
+        "y": -330.2499235758573,
+        "rotation": 2.9
+      }
+    },
+    {
+      "id": "ol_OL20663573W",
+      "title": "Little Secrets",
+      "author": "Jennifer Hillier",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9330726-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 82,
+      "position": {
+        "x": -652.3473861369681,
+        "y": -356.497805620198,
+        "rotation": 0.3
+      }
+    },
+    {
+      "id": "ol_OL28020413W",
+      "title": "Five Survive",
+      "author": "Holly Jackson",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13187233-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 84,
+      "position": {
+        "x": -482.6194384419327,
+        "y": -351.99592175494973,
+        "rotation": 2.6
+      }
+    },
+    {
+      "id": "ol_OL21340485W",
+      "title": "Before We Were Strangers",
+      "author": "Brenda Novak",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13325536-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 86,
+      "position": {
+        "x": -29.420561373374767,
+        "y": -250.75663392989065,
+        "rotation": -1.2
+      }
+    },
+    {
+      "id": "ol_OL17597665W_1778586250006",
+      "title": "Crooked Kingdom",
+      "author": "Leigh Bardugo",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12667428-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 98,
+      "position": {
+        "x": 48.797878689236086,
+        "y": -845.5128309461807,
+        "rotation": -0.1
+      }
+    },
+    {
+      "id": "ol_OL28681709W",
+      "title": "Magnolia Parks",
+      "author": "Jessa Hastings",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13303563-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 100,
+      "position": {
+        "x": -1031.4654704711445,
+        "y": -459.9482159961688,
+        "rotation": -1.1
+      }
     }
   ]
 }

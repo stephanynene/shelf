@@ -5,6 +5,9 @@ export const BACKGROUND_IDS = [
   "colosseum",
   "library",
   "ocean",
+  "scrapbook",
+  "tulips",
+  "golden-forest",
 ] as const;
 
 export type BackgroundId = (typeof BACKGROUND_IDS)[number];

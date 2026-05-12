@@ -15,14 +15,15 @@ export function BackgroundLayer({ backgroundId }: Props) {
         alt=""
         fill
         priority
+        quality={95}
         className="object-cover"
         sizes="100vw"
       />
       <div
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(62,54,42,0.12)_100%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(62,54,42,0.06)_100%)]"
         aria-hidden
       />
-      <div className="absolute inset-0 bg-[#f6f0e6]/35 mix-blend-multiply" aria-hidden />
+      <div className="absolute inset-0 bg-[#f6f0e6]/20 mix-blend-multiply" aria-hidden />
     </div>
   );
 }

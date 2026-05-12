@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, type RefObject } from "react";
 import { TransformComponent, TransformWrapper, useTransformContext } from "react-zoom-pan-pinch";
 import type { BookPosition, ShelfBook } from "@/types/shelf";
 import { BookCard } from "./BookCard";
@@ -37,17 +37,23 @@ function BoardPlacementRef({
 
 type Props = {
   books: ShelfBook[];
-  isEditMode: boolean;
+  deleteBinRef: RefObject<HTMLDivElement | null>;
   onBookOpen: (b: ShelfBook) => void;
   onBookMove: (id: string, p: BookPosition) => void;
+  onBookDragEnd?: (id: string) => void;
+  onBookDelete?: (id: string) => void;
+  onDeleteBinHover?: (active: boolean) => void;
   placementRef: React.MutableRefObject<BoardPlacementGet | null>;
 };
 
 export function ShelfCanvas({
   books,
-  isEditMode,
+  deleteBinRef,
   onBookOpen,
   onBookMove,
+  onBookDragEnd,
+  onBookDelete,
+  onDeleteBinHover,
   placementRef,
 }: Props) {
   return (
@@ -81,9 +87,12 @@ export function ShelfCanvas({
             <BookCard
               key={b.id}
               book={b}
-              isEditMode={isEditMode}
+              deleteBinRef={deleteBinRef}
               onOpen={onBookOpen}
               onMove={onBookMove}
+              onDragEnd={onBookDragEnd}
+              onBookDelete={onBookDelete}
+              onDeleteBinHover={onDeleteBinHover}
             />
           ))}
         </div>

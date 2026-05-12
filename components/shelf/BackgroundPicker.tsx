@@ -12,7 +12,7 @@ export function BackgroundPicker({ currentId, onSelect }: Props) {
   const active = isBackgroundId(currentId) ? currentId : BACKGROUND_IDS[0];
 
   return (
-    <div className="shelf-no-pan fixed bottom-6 left-6 z-30 max-w-[min(100vw-3rem,20rem)] rounded-xl border border-white/50 bg-[#fdfaf5]/90 p-3 shadow-lg backdrop-blur-md">
+    <div className="max-w-[min(100vw-3rem,20rem)] rounded-xl border border-white/50 bg-[#fdfaf5]/95 p-3 shadow-lg backdrop-blur-md">
       <p className="mb-2 text-xs font-medium uppercase tracking-[0.14em] text-[#6b5e4f]">
         Surface
       </p>

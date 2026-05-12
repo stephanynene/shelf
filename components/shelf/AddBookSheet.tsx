@@ -15,7 +15,7 @@ export function AddBookSheet({ open, onClose, onPick }: Props) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-30 flex items-end justify-center sm:items-center sm:p-8">
+    <div className="fixed inset-0 z-[100] flex items-end justify-center sm:items-center sm:p-8">
       <button
         type="button"
         className="absolute inset-0 bg-[#2c2418]/35 backdrop-blur-[1px]"

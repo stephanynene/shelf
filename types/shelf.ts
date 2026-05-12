@@ -12,6 +12,10 @@ export type ShelfBook = {
   monthRead: string;
   rating: number;
   thought: string;
+  /** Short plot teaser or your own blurb; modal may also fetch from Open Library when missing. */
+  summary?: string;
+  /** Higher = drawn on top; updated when a cover is dragged. */
+  layerRank?: number;
   position: BookPosition;
 };
 
