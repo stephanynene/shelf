@@ -1,21 +1,16 @@
 export const BACKGROUND_IDS = [
-  "linen",
+  "venice",
+  "acropolis",
   "forest",
+  "colosseum",
   "library",
-  "cafe",
-  "bedroom",
-  "desk",
-  "sunset",
   "ocean",
-  "study",
-  "attic",
-  "garden",
 ] as const;
 
 export type BackgroundId = (typeof BACKGROUND_IDS)[number];
 
 export function backgroundSrc(id: string): string {
-  return `/backgrounds/${id}.jpg`;
+  return `/backgrounds/${id}.png`;
 }
 
 export function isBackgroundId(id: string): id is BackgroundId {

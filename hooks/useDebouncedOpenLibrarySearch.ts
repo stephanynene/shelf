@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   docToShelfCandidate,
   searchOpenLibraryByTitle,
@@ -68,10 +68,7 @@ export function useDebouncedOpenLibrarySearch() {
     setError(null);
   }, []);
 
-  return useMemo(
-    () => ({ query, setQuery, loading, error, hits, clear }),
-    [query, loading, error, hits, clear],
-  );
+  return { query, setQuery, loading, error, hits, clear };
 }
 
 function useDebouncedValue<T>(value: T, ms: number): T {

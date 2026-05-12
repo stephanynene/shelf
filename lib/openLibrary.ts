@@ -24,12 +24,13 @@ export function docToShelfCandidate(doc: OpenLibrarySearchDoc): {
   if (!doc.key || !doc.title) return null;
   const workId = doc.key.replace(/^\/works\//, "").replace(/^\/books\//, "");
   if (!workId) return null;
-  if (doc.cover_i == null) return null;
+  const coverUrl =
+    doc.cover_i != null ? openLibraryCoverUrl(doc.cover_i, "M") : "/placeholder-cover.svg";
   return {
     id: `ol_${workId}`,
     title: doc.title,
     author: doc.author_name?.[0] ?? "Unknown author",
-    coverUrl: openLibraryCoverUrl(doc.cover_i, "M"),
+    coverUrl,
   };
 }
 

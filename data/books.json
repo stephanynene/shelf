@@ -1,0 +1,35 @@
+{
+  "background": "forest",
+  "books": [
+    {
+      "id": "ol_OL8584931W",
+      "title": "The Wind-Up Bird Chronicle",
+      "author": "Haruki Murakami",
+      "coverUrl": "https://covers.openlibrary.org/b/id/630454-M.jpg",
+      "monthRead": "2024-03",
+      "rating": 5,
+      "thought": "the saddest book i'll ever recommend without hesitation",
+      "position": { "x": 0, "y": 0, "rotation": -2 }
+    },
+    {
+      "id": "ol_OL20150260W",
+      "title": "Normal People",
+      "author": "Sally Rooney",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8794265-M.jpg",
+      "monthRead": "2023-11",
+      "rating": 4,
+      "thought": "quiet and bruising in the best way",
+      "position": { "x": 220, "y": -40, "rotation": 1.5 }
+    },
+    {
+      "id": "ol_OL18012166W",
+      "title": "Circe",
+      "author": "Madeline Miller",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8739376-M.jpg",
+      "monthRead": "2022-08",
+      "rating": 5,
+      "thought": "myth retold with teeth and sunlight",
+      "position": { "x": -200, "y": 80, "rotation": 2 }
+    }
+  ]
+}
