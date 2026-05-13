@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { fetchOpenLibraryWorkSummary, openLibraryCoverUrlForDetail } from "@/lib/openLibrary";
 import type { ShelfBook } from "@/types/shelf";
@@ -105,7 +104,32 @@ export function BookModal({ book, onClose, onSave }: Props) {
     onClose();
   };
 
-  const modalCoverSrc = openLibraryCoverUrlForDetail(book.coverUrl);
+  /** Same URL as the canvas card first (HTTP cache hit), then optional OL `-L` swap when preloaded. */
+  const coverHiRes = openLibraryCoverUrlForDetail(book.coverUrl);
+  const hasHiRes = coverHiRes !== book.coverUrl;
+  const [hiResReady, setHiResReady] = useState(!hasHiRes);
+
+  useEffect(() => {
+    if (!hasHiRes) {
+      setHiResReady(true);
+      return;
+    }
+    setHiResReady(false);
+    const img = new Image();
+    let cancelled = false;
+    img.onload = () => {
+      if (!cancelled) setHiResReady(true);
+    };
+    img.onerror = () => {
+      if (!cancelled) setHiResReady(false);
+    };
+    img.src = coverHiRes;
+    return () => {
+      cancelled = true;
+      img.onload = null;
+      img.onerror = null;
+    };
+  }, [book.coverUrl, coverHiRes, hasHiRes]);
 
   return (
     <div
@@ -126,15 +150,25 @@ export function BookModal({ book, onClose, onSave }: Props) {
           className="relative mx-auto aspect-[2/3] w-full max-w-[min(17rem,82vw)] shrink-0 overflow-hidden rounded-2xl bg-[#e8e2d8] shadow-[0_24px_60px_-12px_rgba(44,36,24,0.55)] sm:max-w-[min(19rem,80vw)] md:mx-0 md:h-[min(82vh,720px)] md:w-auto md:max-w-none md:shadow-[0_28px_70px_-14px_rgba(44,36,24,0.5)]"
           onClick={(e) => e.stopPropagation()}
         >
-          <Image
-            src={modalCoverSrc}
+          {/* eslint-disable-next-line @next/next/no-img-element -- same-origin OL URL as BookCard for cache; no Image optimizer wait */}
+          <img
+            src={book.coverUrl}
             alt=""
-            fill
-            priority
-            quality={95}
-            className="object-contain object-center"
-            sizes="(max-width: 768px) 85vw, 28rem"
+            decoding="async"
+            fetchPriority="high"
+            className="absolute inset-0 h-full w-full object-contain object-center"
           />
+          {hasHiRes ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={coverHiRes}
+              alt=""
+              decoding="async"
+              className={`absolute inset-0 h-full w-full object-contain object-center transition-opacity duration-200 ease-out ${
+                hiResReady ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ) : null}
         </div>
 
         {/* Details card */}

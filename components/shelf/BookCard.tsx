@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { useTransformContext } from "react-zoom-pan-pinch";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { RefObject } from "react";
 import type { BookPosition, ShelfBook } from "@/types/shelf";
 import { CANVAS_CX, CANVAS_CY } from "./constants";
 
 const DRAG_THRESHOLD = 6;
+const HOVER_Z = 500_000;
 
 type Props = {
   book: ShelfBook;
@@ -43,6 +44,16 @@ export function BookCard({
   } | null>(null);
 
   const [isDragging, setIsDragging] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [finePointerHover, setFinePointerHover] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const sync = () => setFinePointerHover(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
 
   const endDrag = useCallback(() => {
     dragRef.current = null;
@@ -125,6 +136,10 @@ export function BookCard({
 
   const { x, y, rotation } = book.position;
 
+  const showPreview = finePointerHover === true && hovered && !isDragging;
+
+  const zIndex = isDragging ? DRAG_Z + stackZ : showPreview ? HOVER_Z + stackZ : 10 + stackZ;
+
   return (
     <button
       type="button"
@@ -134,20 +149,40 @@ export function BookCard({
         top: CANVAS_CY + y,
         transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
         cursor: isDragging ? "grabbing" : "grab",
-        zIndex: isDragging ? DRAG_Z + stackZ : 10 + stackZ,
+        zIndex,
       }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
       onPointerCancel={onPointerCancel}
       aria-label={`Open details for ${book.title}`}
     >
+      {showPreview ? (
+        <div
+          className="pointer-events-none absolute bottom-[calc(100%-10px)] left-1/2 z-10 w-48 -translate-x-1/2"
+          aria-hidden
+        >
+          <div className="rounded-xl border border-[#d8cdc0]/95 bg-[#fdfaf5]/[0.97] px-3 py-2.5 shadow-[0_16px_34px_-16px_rgba(44,36,24,0.52)] ring-1 ring-black/[0.04] backdrop-blur-[2px]">
+            <p className="text-center font-serif text-sm font-semibold leading-snug text-[#1f1810] line-clamp-3">
+              {book.title}
+            </p>
+            <p className="mt-1 text-center text-[11px] font-medium tracking-[0.08em] text-amber-700">
+              {"★".repeat(Math.max(0, Math.min(5, Math.round(book.rating))))}
+              {"☆".repeat(Math.max(0, 5 - Math.max(0, Math.min(5, Math.round(book.rating)))))}
+            </p>
+          </div>
+        </div>
+      ) : null}
+
       <div className="w-36 overflow-hidden rounded-md shadow-[0_12px_28px_-6px_rgba(44,36,24,0.43),0_4px_10px_-4px_rgba(44,36,24,0.28)] transition-shadow group-hover:shadow-[0_18px_36px_-8px_rgba(44,36,24,0.5)]">
         <div className="relative aspect-[2/3] w-full bg-[#e8e2d8]">
           <Image
             src={book.coverUrl}
             alt=""
             fill
+            unoptimized
             className="object-cover outline-none [display:block]"
             sizes="144px"
             draggable={false}

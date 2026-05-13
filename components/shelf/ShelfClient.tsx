@@ -77,11 +77,21 @@ export function ShelfClient({ initial }: { initial: ShelfData }) {
         const normalized = normalizeShelfData(stored);
         const storedEmpty = normalized.books.length === 0;
         const seedHasBooks = initial.books.length > 0;
+        const seedIds = new Set(initial.books.map((b) => b.id));
+        const storedLooksLikePartialSeed =
+          seedHasBooks &&
+          normalized.books.length > 0 &&
+          normalized.books.length < initial.books.length &&
+          normalized.books.every((b) => seedIds.has(b.id));
         if (storedEmpty && seedHasBooks) {
           const recovered = normalizeShelfData({
             background: normalized.background,
             books: initial.books,
           });
+          setData(recovered);
+          saveShelfToStorage(recovered);
+        } else if (storedLooksLikePartialSeed) {
+          const recovered = normalizeShelfData(initial);
           setData(recovered);
           saveShelfToStorage(recovered);
         } else {
@@ -218,6 +228,23 @@ export function ShelfClient({ initial }: { initial: ShelfData }) {
     URL.revokeObjectURL(url);
   }, [exportBlob]);
 
+  const resetShelfFromSeed = useCallback(() => {
+    if (
+      !confirm(
+        "Reload shelf from the project books.json? This replaces this browser’s saved shelf (localStorage) with the version from the repo.",
+      )
+    ) {
+      return;
+    }
+    const fresh = normalizeShelfData(initial);
+    setData(fresh);
+    try {
+      saveShelfToStorage(fresh);
+    } catch {
+      /* ignore */
+    }
+  }, [initial]);
+
   return (
     <div className="relative min-h-dvh overflow-hidden bg-[#f6f0e6] text-[#2c2418]">
       <BackgroundLayer backgroundId={data.background} />
@@ -306,6 +333,30 @@ export function ShelfClient({ initial }: { initial: ShelfData }) {
         </div>
 
         <div className="shelf-no-pan pointer-events-auto absolute bottom-3 right-3 z-10 flex flex-col items-end gap-1.5 sm:bottom-4 sm:right-4">
+          <button
+            type="button"
+            onClick={resetShelfFromSeed}
+            className="flex h-10 w-10 items-center justify-center rounded-md border border-[#c9bdad]/75 bg-[#fdfaf5]/93 shadow-sm backdrop-blur-sm transition hover:bg-[#efe8dd]"
+            aria-label="Reload shelf from project books.json"
+            title="If books disappeared or look wrong: reload from data/books.json (overwrites this browser’s shelf save)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-[#5c5246]"
+              aria-hidden
+            >
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+            </svg>
+          </button>
           <button
             type="button"
             onClick={downloadShelfJson}
