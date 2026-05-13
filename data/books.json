@@ -1,5 +1,5 @@
 {
-  "background": "tulips",
+  "background": "six-of-crows",
   "books": [
     {
       "id": "ol_OL20150260W",
@@ -41,10 +41,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 37,
+      "layerRank": 162,
       "position": {
-        "x": -802.9385519423246,
-        "y": 198.51357883550597,
+        "x": 714.2311556146113,
+        "y": 343.2227532661478,
         "rotation": -1
       }
     },
@@ -56,10 +56,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 93,
+      "layerRank": 108,
       "position": {
-        "x": -1342.5607721360698,
-        "y": 407.940397031565,
+        "x": 19.995074694963023,
+        "y": -671.5240779397504,
         "rotation": -2.9
       }
     },
@@ -70,7 +70,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/15155355-M.jpg",
       "monthRead": "2026-05",
       "rating": 5,
-      "thought": "",
+      "thought": "plot twist absolutely threw me off.",
       "layerRank": 95,
       "position": {
         "x": -312.793748460854,
@@ -86,10 +86,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 36,
+      "layerRank": 179,
       "position": {
-        "x": -942.7776348032421,
-        "y": -93.82043374949981,
+        "x": -1143.4813839896206,
+        "y": -169.7731869199419,
         "rotation": 3
       }
     },
@@ -101,10 +101,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 88,
+      "layerRank": 178,
       "position": {
-        "x": -745.4018354972468,
-        "y": -97.40345726600926,
+        "x": -925.0115217522268,
+        "y": -367.8995977042563,
         "rotation": -2.4
       }
     },
@@ -116,10 +116,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 42,
+      "layerRank": 157,
       "position": {
-        "x": -625.0114089928873,
-        "y": 159.18695851619253,
+        "x": -594.5297190342951,
+        "y": 182.55975872323188,
         "rotation": -0.9
       }
     },
@@ -131,10 +131,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 44,
+      "layerRank": 161,
       "position": {
-        "x": -565.1124229154054,
-        "y": -114.86532659276634,
+        "x": 457.96922822331095,
+        "y": 379.92634007390035,
         "rotation": 2.7
       }
     },
@@ -161,10 +161,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 48,
+      "layerRank": 111,
       "position": {
-        "x": -429.2827467652843,
-        "y": 125.17515464210051,
+        "x": -330.9310134519103,
+        "y": 97.5716270859121,
         "rotation": 0.5
       }
     },
@@ -176,10 +176,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 50,
+      "layerRank": 166,
       "position": {
-        "x": -1332.8891707967614,
-        "y": 141.10754719657993,
+        "x": -34.91454503786204,
+        "y": -1046.0771737173643,
         "rotation": -2.4
       }
     },
@@ -191,10 +191,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 52,
+      "layerRank": 167,
       "position": {
-        "x": -394.0413726732746,
-        "y": -145.55729087848061,
+        "x": -265.0250200033655,
+        "y": -628.3452523545063,
         "rotation": -1.9
       }
     },
@@ -206,10 +206,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 54,
+      "layerRank": 150,
       "position": {
-        "x": -227.87914507036908,
-        "y": 3.9064273418583753,
+        "x": 374.5213828890817,
+        "y": -40.693341318451175,
         "rotation": 2
       }
     },
@@ -221,10 +221,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 56,
+      "layerRank": 146,
       "position": {
-        "x": -575.5212077217008,
-        "y": 406.4015090609867,
+        "x": -1539.6327700905176,
+        "y": -284.5625239578813,
         "rotation": -1.5
       }
     },
@@ -236,10 +236,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 58,
+      "layerRank": 180,
       "position": {
-        "x": -1315.495481329449,
-        "y": -146.9523801641949,
+        "x": -1432.1771919868195,
+        "y": -109.57065705662518,
         "rotation": -1.2
       }
     },
@@ -251,10 +251,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 60,
+      "layerRank": 113,
       "position": {
-        "x": -375.5836320558412,
-        "y": 374.25770609488507,
+        "x": -195.643321577996,
+        "y": 395.77091589679844,
         "rotation": 1.4
       }
     },
@@ -266,10 +266,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 63,
+      "layerRank": 149,
       "position": {
-        "x": -214.42953853283876,
-        "y": -250.7753977186743,
+        "x": 832.2935431420697,
+        "y": -86.1768678240795,
         "rotation": 2.7
       }
     },
@@ -281,10 +281,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 65,
+      "layerRank": 143,
       "position": {
-        "x": -216.85557515511482,
-        "y": 257.12222637333537,
+        "x": -1524.7413064152065,
+        "y": -645.2744443665403,
         "rotation": -2.6
       }
     },
@@ -311,10 +311,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 69,
+      "layerRank": 102,
       "position": {
-        "x": -11.693893768192197,
-        "y": 12.218022315653258,
+        "x": 757.2924892153632,
+        "y": -32.73995437528982,
         "rotation": -0.6
       }
     },
@@ -326,10 +326,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 71,
+      "layerRank": 181,
       "position": {
-        "x": -823.1680609738844,
-        "y": -340.72909928848645,
+        "x": -828.3095610411103,
+        "y": -590.579341016795,
         "rotation": -1
       }
     },
@@ -386,10 +386,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 89,
+      "layerRank": 101,
       "position": {
-        "x": -2023.4644833986242,
-        "y": -330.2499235758573,
+        "x": -2021.3555384157523,
+        "y": -645.8229901250418,
         "rotation": 2.9
       }
     },
@@ -431,10 +431,10 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 86,
+      "layerRank": 144,
       "position": {
-        "x": -29.420561373374767,
-        "y": -250.75663392989065,
+        "x": -1507.0261274572717,
+        "y": -489.3817841495942,
         "rotation": -1.2
       }
     },
@@ -461,11 +461,251 @@
       "monthRead": "2026-05",
       "rating": 5,
       "thought": "",
-      "layerRank": 100,
+      "layerRank": 145,
       "position": {
-        "x": -1031.4654704711445,
-        "y": -459.9482159961688,
+        "x": -1383.1098625046875,
+        "y": -431.8346808808648,
         "rotation": -1.1
+      }
+    },
+    {
+      "id": "ol_OL21330193W",
+      "title": "A Kingdom of Flesh and Fire",
+      "author": "Jennifer L. Armentrout",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10360316-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 117,
+      "position": {
+        "x": -1044.7609298363598,
+        "y": -859.3474757431026,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "ol_OL37830197W",
+      "title": "Spectacular:A Caraval Novella",
+      "author": "Stephanie Garber",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15089734-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 151,
+      "position": {
+        "x": 298.0138863471906,
+        "y": 257.68340329789174,
+        "rotation": 0.8
+      }
+    },
+    {
+      "id": "ol_OL17071448W",
+      "title": "We Were Liars",
+      "author": "E. Lockhart",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14425312-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 163,
+      "position": {
+        "x": 571.602673392222,
+        "y": 167.854739485751,
+        "rotation": -0.6
+      }
+    },
+    {
+      "id": "ol_OL27701938W",
+      "title": "The Crown of Gilded Bones",
+      "author": "Jennifer L. Armentrout",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15118088-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 176,
+      "position": {
+        "x": 301.0668547055735,
+        "y": -232.45653744744442,
+        "rotation": 0.4
+      }
+    },
+    {
+      "id": "ol_OL16239519W",
+      "title": "Shadow and Bone",
+      "author": "Leigh Bardugo",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13816048-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 165,
+      "position": {
+        "x": 400.891086694221,
+        "y": -912.753916486504,
+        "rotation": 0.8
+      }
+    },
+    {
+      "id": "ol_OL17293267W",
+      "title": "Ruin and Rising",
+      "author": "Leigh Bardugo",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12667421-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 174,
+      "position": {
+        "x": -759.4144715115556,
+        "y": -977.5251806176105,
+        "rotation": 1.9
+      }
+    },
+    {
+      "id": "ol_OL17797857W",
+      "title": "One Of Us Is Lying",
+      "author": "Karen M. McManus",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12503935-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 154,
+      "position": {
+        "x": -164.55527227778637,
+        "y": -215.1508301843046,
+        "rotation": 2.2
+      }
+    },
+    {
+      "id": "ol_OL20759125W",
+      "title": "Mexican Gothic",
+      "author": "Silvia Moreno-Garcia",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10239163-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 175,
+      "position": {
+        "x": 570.535949558633,
+        "y": -269.1541076635387,
+        "rotation": -0.6
+      }
+    },
+    {
+      "id": "ol_OL19737591W",
+      "title": "Daughter of the pirate king",
+      "author": "Tricia Levenseller",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9379961-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 177,
+      "position": {
+        "x": -278.7481506732182,
+        "y": 12.524865062949289,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "ol_OL21676651W",
+      "title": "Kingdom of the Wicked",
+      "author": "Kerri Maniscalco",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10526129-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 168,
+      "position": {
+        "x": 185.4779321442611,
+        "y": -738.6689149773968,
+        "rotation": 2.4
+      }
+    },
+    {
+      "id": "ol_OL20039486W",
+      "title": "Stalking Jack the Ripper",
+      "author": "Kerri Maniscalco",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10223909-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 173,
+      "position": {
+        "x": -456.8338969283375,
+        "y": -1018.3960426881965,
+        "rotation": -0.9
+      }
+    },
+    {
+      "id": "ol_OL28607665W",
+      "title": "Happy Place",
+      "author": "Emily Henry",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13233403-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 140,
+      "position": {
+        "x": -1672.6686873525944,
+        "y": -677.5927529644918,
+        "rotation": 1.5
+      }
+    },
+    {
+      "id": "ol_OL25763548W",
+      "title": "The Summer of Broken Rules",
+      "author": "K. L. Walther",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12410810-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 142,
+      "position": {
+        "x": -1635.9810563253407,
+        "y": -463.41232843618985,
+        "rotation": 2.4
+      }
+    },
+    {
+      "id": "ol_OL20068530W",
+      "title": "Verity",
+      "author": "Colleen Hoover",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8747160-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 160,
+      "position": {
+        "x": 585.8113606770835,
+        "y": 345.9867173346919,
+        "rotation": 0.1
+      }
+    },
+    {
+      "id": "ol_OL25280693W",
+      "title": "Kingdom of the Cursed",
+      "author": "Kerri Maniscalco",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12100229-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 170,
+      "position": {
+        "x": 165.60588198413166,
+        "y": -560.7486710010337,
+        "rotation": -2.5
+      }
+    },
+    {
+      "id": "ol_OL27408986W",
+      "title": "Kingdom of the Feared",
+      "author": "Kerri Maniscalco",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12945191-M.jpg",
+      "monthRead": "2026-05",
+      "rating": 5,
+      "thought": "",
+      "layerRank": 172,
+      "position": {
+        "x": 341.9634746158639,
+        "y": -693.4146513574542,
+        "rotation": -1.6
       }
     }
   ]
